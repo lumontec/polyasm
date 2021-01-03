@@ -907,6 +907,8 @@ main:
 	.string	"_cur_column"
 .LASF52:
 	.string	"_IO_FILE"
+.LASF45:
+	.string	"stdout"
 .LASF2:
 	.string	"unsigned char"
 .LASF4:
@@ -927,8 +929,6 @@ main:
 	.string	"_IO_read_ptr"
 .LASF3:
 	.string	"short unsigned int"
-.LASF51:
-	.string	"/home/crash/Documents/local/sysdig-repo/polyasm/0_printf"
 .LASF10:
 	.string	"char"
 .LASF54:
@@ -977,8 +977,8 @@ main:
 	.string	"_fileno"
 .LASF40:
 	.string	"FILE"
-.LASF45:
-	.string	"stdout"
+.LASF51:
+	.string	"/home/crash/Documents/local/sysdig-repo/polyasm/1_printf"
 .LASF53:
 	.string	"_IO_lock_t"
 	.ident	"GCC: (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0"

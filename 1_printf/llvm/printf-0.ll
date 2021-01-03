@@ -23,7 +23,7 @@ attributes #1 = { "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-
 !llvm.ident = !{!6}
 
 !0 = distinct !DICompileUnit(language: DW_LANG_C99, file: !1, producer: "clang version 10.0.0-4ubuntu1 ", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, enums: !2, splitDebugInlining: false, nameTableKind: None)
-!1 = !DIFile(filename: "printf.c", directory: "/home/crash/Documents/local/sysdig-repo/polyasm/0_printf")
+!1 = !DIFile(filename: "printf.c", directory: "/home/crash/Documents/local/sysdig-repo/polyasm/1_printf")
 !2 = !{}
 !3 = !{i32 7, !"Dwarf Version", i32 4}
 !4 = !{i32 2, !"Debug Info Version", i32 3}

@@ -1,5 +1,39 @@
 	.file	"types.c"
 	.intel_syntax noprefix
+# GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+#	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+# GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+# options passed:  -imultiarch x86_64-linux-gnu types.c -masm=intel
+# -mtune=generic -march=x86-64 -auxbase-strip ./x86_x64/types-0.s -g -O0
+# -fverbose-asm -fasynchronous-unwind-tables -fstack-protector-strong
+# -Wformat -Wformat-security -fstack-clash-protection -fcf-protection
+# options enabled:  -fPIC -fPIE -faggressive-loop-optimizations
+# -fassume-phsa -fasynchronous-unwind-tables -fauto-inc-dec -fcommon
+# -fdelete-null-pointer-checks -fdwarf2-cfi-asm -fearly-inlining
+# -feliminate-unused-debug-types -ffp-int-builtin-inexact -ffunction-cse
+# -fgcse-lm -fgnu-runtime -fgnu-unique -fident -finline-atomics
+# -fipa-stack-alignment -fira-hoist-pressure -fira-share-save-slots
+# -fira-share-spill-slots -fivopts -fkeep-static-consts
+# -fleading-underscore -flifetime-dse -flto-odr-type-merging -fmath-errno
+# -fmerge-debug-strings -fpeephole -fplt -fprefetch-loop-arrays
+# -freg-struct-return -fsched-critical-path-heuristic
+# -fsched-dep-count-heuristic -fsched-group-heuristic -fsched-interblock
+# -fsched-last-insn-heuristic -fsched-rank-heuristic -fsched-spec
+# -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-fusion
+# -fsemantic-interposition -fshow-column -fshrink-wrap-separate
+# -fsigned-zeros -fsplit-ivs-in-unroller -fssa-backprop
+# -fstack-clash-protection -fstack-protector-strong -fstdarg-opt
+# -fstrict-volatile-bitfields -fsync-libcalls -ftrapping-math -ftree-cselim
+# -ftree-forwprop -ftree-loop-if-convert -ftree-loop-im -ftree-loop-ivcanon
+# -ftree-loop-optimize -ftree-parallelize-loops= -ftree-phiprop
+# -ftree-reassoc -ftree-scev-cprop -funit-at-a-time -funwind-tables
+# -fverbose-asm -fzero-initialized-in-bss -m128bit-long-double -m64 -m80387
+# -malign-stringops -mavx256-split-unaligned-load
+# -mavx256-split-unaligned-store -mfancy-math-387 -mfp-ret-in-387 -mfxsr
+# -mglibc -mieee-fp -mlong-double-80 -mmmx -mno-sse4 -mpush-args -mred-zone
+# -msse -msse2 -mstv -mtls-direct-seg-refs -mvzeroupper
+
 	.text
 .Ltext0:
 	.globl	main
@@ -9,49 +43,58 @@ main:
 	.file 1 "types.c"
 	.loc 1 3 12
 	.cfi_startproc
-	endbr64
-	push	rbp
+	endbr64	
+	push	rbp	#
 	.cfi_def_cfa_offset 16
 	.cfi_offset 6, -16
-	mov	rbp, rsp
+	mov	rbp, rsp	#,
 	.cfi_def_cfa_register 6
-	sub	rsp, 64
+	sub	rsp, 64	#,
+# types.c:3: int main() {
 	.loc 1 3 12
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -8[rbp], rax
-	xor	eax, eax
+	mov	rax, QWORD PTR fs:40	# tmp88, MEM[(<address-space-1> long unsigned int *)40B]
+	mov	QWORD PTR -8[rbp], rax	# D.2326, tmp88
+	xor	eax, eax	# tmp88
+# types.c:4:    int i = 32;
 	.loc 1 4 8
-	mov	DWORD PTR -56[rbp], 32
+	mov	DWORD PTR -56[rbp], 32	# i,
+# types.c:5:    int ia[] = {1, 2};
 	.loc 1 5 8
-	mov	DWORD PTR -48[rbp], 1
-	mov	DWORD PTR -44[rbp], 2
+	mov	DWORD PTR -48[rbp], 1	# ia,
+	mov	DWORD PTR -44[rbp], 2	# ia,
+# types.c:6:    char c = 'c';
 	.loc 1 6 9
-	mov	BYTE PTR -57[rbp], 99
+	mov	BYTE PTR -57[rbp], 99	# c,
+# types.c:7:    char ca[] = "this is a string";
 	.loc 1 7 9
-	movabs	rax, 2338328219631577204
-	movabs	rdx, 7453010373645639777
-	mov	QWORD PTR -32[rbp], rax
-	mov	QWORD PTR -24[rbp], rdx
-	mov	BYTE PTR -16[rbp], 0
+	movabs	rax, 2338328219631577204	# tmp90,
+	movabs	rdx, 7453010373645639777	#,
+	mov	QWORD PTR -32[rbp], rax	# ca, tmp90
+	mov	QWORD PTR -24[rbp], rdx	# ca,
+	mov	BYTE PTR -16[rbp], 0	# ca,
+# types.c:8:    float f = 2.2;
 	.loc 1 8 10
-	movss	xmm0, DWORD PTR .LC0[rip]
-	movss	DWORD PTR -52[rbp], xmm0
+	movss	xmm0, DWORD PTR .LC0[rip]	# tmp84,
+	movss	DWORD PTR -52[rbp], xmm0	# f, tmp84
+# types.c:9:    float fa[] = {1.1, 2.2};
 	.loc 1 9 10
-	movss	xmm0, DWORD PTR .LC1[rip]
-	movss	DWORD PTR -40[rbp], xmm0
-	movss	xmm0, DWORD PTR .LC0[rip]
-	movss	DWORD PTR -36[rbp], xmm0
+	movss	xmm0, DWORD PTR .LC1[rip]	# tmp85,
+	movss	DWORD PTR -40[rbp], xmm0	# fa, tmp85
+	movss	xmm0, DWORD PTR .LC0[rip]	# tmp86,
+	movss	DWORD PTR -36[rbp], xmm0	# fa, tmp86
+# types.c:10:    return 0;
 	.loc 1 10 11
-	mov	eax, 0
+	mov	eax, 0	# _10,
+# types.c:11: }
 	.loc 1 11 1
-	mov	rcx, QWORD PTR -8[rbp]
-	xor	rcx, QWORD PTR fs:40
-	je	.L3
-	call	__stack_chk_fail@PLT
+	mov	rcx, QWORD PTR -8[rbp]	# tmp89, D.2326
+	xor	rcx, QWORD PTR fs:40	# tmp89, MEM[(<address-space-1> long unsigned int *)40B]
+	je	.L3	#,
+	call	__stack_chk_fail@PLT	#
 .L3:
-	leave
+	leave	
 	.cfi_def_cfa 7, 8
-	ret
+	ret	
 	.cfi_endproc
 .LFE0:
 	.size	main, .-main

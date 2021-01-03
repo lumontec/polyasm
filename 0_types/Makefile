@@ -7,9 +7,9 @@ all: x86_x64 llvm dump
 .PHONY: x86_x64 
 x86_x64:
 	mkdir -p ./x86_x64
-	gcc -S -O0 -g -masm=intel $(NAME).c -o ./x86_x64/$(NAME)-0.s
-	gcc -S -O1 -g -masm=intel $(NAME).c -o ./x86_x64/$(NAME)-1.s
-	gcc -S -O2 -g -masm=intel $(NAME).c -o ./x86_x64/$(NAME)-2.s
+	gcc -fverbose-asm -S -O0 -g -masm=intel $(NAME).c -o ./x86_x64/$(NAME)-0.s
+	gcc -fverbose-asm -S -O1 -g -masm=intel $(NAME).c -o ./x86_x64/$(NAME)-1.s
+	gcc -fverbose-asm -S -O2 -g -masm=intel $(NAME).c -o ./x86_x64/$(NAME)-2.s
 
 .PHONY: llvm 
 llvm:
