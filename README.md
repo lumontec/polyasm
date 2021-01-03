@@ -13,9 +13,9 @@ Then explore..
 ### Encoding
 For every example folders are generated for the different targets  
 Inside each of them the files adopt the following naming:  
-**<compiler(optional)>-<name>-<optimization>.<type>**  
+**[compiler(optional)]-[name]-[optimization].[type]**  
 Examples:  
-printf-0.ll ('name='printf-'optimization='0.'type='ll)  
-gcc-printf-2.dump ('compiler='gcc-'name='printf-'optimization='2.'type='dump)  
+**printf-0.ll** ('name='printf-'optimization='0.'type='ll)  
+**gcc-printf-2.dump** ('compiler='gcc-'name='printf-'optimization='2.'type='dump)  
 
 
