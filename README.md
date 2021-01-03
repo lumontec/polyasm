@@ -5,7 +5,7 @@ See how stupid pieces of C code get translated from x86, llvm, and other assembl
 
 # Running
 ```bash 
-cd ./0_printf
+cd ./1_printf
 make all
 ```
 Then explore..
