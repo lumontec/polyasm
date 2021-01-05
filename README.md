@@ -18,4 +18,6 @@ Examples:
 **printf-0.ll** ('name='printf-'optimization='0.'type='ll)  
 **gcc-printf-2.dump** ('compiler='gcc-'name='printf-'optimization='2.'type='dump)  
 
-
+# Examples
+./x86_examples:
+Contains simple gdb step debuggable examples of simle asm code compiled by nasm utility
